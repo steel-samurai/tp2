@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=VT323&display=swap');
+
+html,
+body {
+    background-color: black;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 23px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkmagenta;
+    height: 30px;
+    padding: 5px 50px 5px 50px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+}
+
+#tela-inicial {
+    text-align: center;
+}
+
+#tela-inicial h1 {
+    position: relative;
+    animation: textclip 1.5s linear infinite;
+    background-image: linear-gradient(200deg, #ffffff 1%, #d876c1 30%, #ffffff 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+#secao-status {
+    position: absolute;
+    display: inline-block;
+    margin: 0.4em;
+    padding: 0.4em;
+    border: 3px solid white;
+    background-color: black;
+
+}
+
+#secao-pet {
+    width: 62%;
+    height: 60vh;
+    background-color: gray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/casa.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#secao-pet img {
+    text-align: center;
+    image-rendering: pixelated;
+    height: 300px;
+    width: auto;
+}
+
+#secao-info {
+    font-size: sslarger;
+    font-family: 'VT323', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    bottom: 10px;
+    width: 34%;
+    border: 3px solid #ffffff;
+    border-radius: 5%;
+    padding: 0.5em;
+}
+
+#secao-info button,
+select {
+    font-family: 'VT323';
+    display: inline-block;
+    margin: 0.1em;
+    outline: none;
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 8px;
+    /*border: 1px solid #222222;*/
+    background: transparent;
+    color: #ffffff;
+}
+
+#secao-info button:hover, select:hover {
+    border-color: #000000;
+    background: #1e1d1d;
+}
+
+#secao-chat {
+    display: flex;
+    position: absolute;
+    font-size: xx-large;
+    bottom: 0;
+    height: 240px;
+    width: 61%;
+    align-items: center;
+    justify-content: center;
+    background-size:cover;
+    /*background-image: url(textbox.png);
+    background-position:center; */
+}
+
+#textBox {
+    margin: auto;
+    font-size: xx-large;
+    color: #000000;
+    padding-top: 8%;
+    width: 85%;
+    border-style: none;
+    max-width: 80%;
+}
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+  }
+
+  #menu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #111;
+    padding-top: 60px;
+    transition: 0.5s;
+    
+  z-index: 999;
+  }
+
+  #menu a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  #menu a:hover {
+    background-color: #555;
+  }
+
+  #menu .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+
+
+  #btnInfo {
+    margin: 0.1em;
+    outline: none;
+    cursor: pointer;
+    font-size: larger;
+    background: transparent;
+    color: #ffffff;
+  }
+
+  #text-box{
+    left: 200px;
+}
+
+#next-button{
+    font-family: 'VT323', monospace;
+    margin: 0.1em;
+    margin-left: 10px;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    color: #ffffff;
+}
+
+#roupa-pet{
+    background-image: url(imgs/pet1.png);
+    width: 100;
+    height: 100;
+}

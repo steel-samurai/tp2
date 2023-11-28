@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tamacat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Boogaloo&family=Encode+Sans&display=swap">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <span id="btnInfo">Infos :></span>
+    </div>
+
+    <div id="menu">
+        <div class="close-btn" onclick="fecharMenu()">×</div>
+        <p>Este site foi feito em referência ao famoso jogo Tamagotchi</p>
+        <p>Autora: Izabel S A Kaitel</p>
+    </div>
+    <div id="tela-inicial">
+        <h1>Cat Tamagotchi</h1>
+        <label for="nome-jogador">Digite seu nome: </label>
+        <input type="text" id="nome-jogador">
+        <button id="botao-inicial">Iniciar</button>
+    </div>
+    <div id="game" style="display: none;">
+        <div id="secao-status">
+            <label>Nome do jogador: <span id="nomeJogadorDisplay"></span></label>
+            <br>
+            <label>Nível do jogador: <span id="nivelJogadorDisplay"></span></label>
+        </div>
+        <div id="secao-pet">
+            <img id="roupaPet">
+        </div>
+        <div id="secao-info">
+            <div id="info1">
+                <div>
+                    <label>Felicidade: </label>
+                    <span id="felicidade">100</span>
+                </div>
+                <div>
+                    <label>Fome: </label>
+                    <span id="fome">0</span>
+                </div>
+                <div>
+                    <label>Nível: </label>
+                    <span id="level">1</span>
+                </div>
+                <div><button id="btnSalvar">Salvar Jogo</button> <button id="btnCarregar">Carregar Jogo</button></div>
+
+            </div>
+
+            <div>
+                <div><button id="btnAlimentar">Alimentar</button></div>
+                <div><button id="btnCarinho">Dar Carinho</button></div>
+                <div><button id="btnBanhar">Escovar o gato</button></div>
+                <div><button id="btnFalar">Conversar</button></div>
+            </div>
+            <div>
+                <select id="roupasSelect">
+                    <option value="imgs/pet1.png">Roupa 1</option>
+                    <option value="imgs/pet2.png">Halloween</option>
+                    <option value="imgs/pet3.png">Natal</option>
+                </select>
+                <button id="btnVestir">Mudar Roupa</button>
+                <button id="btnDownload">Baixar Avatar</button>
+            </div>
+
+        </div>
+        <div id="secao-chat">
+            <div id="text-box"></div>
+            <button id="next-button" onclick="mostrarProxFala()">>></button>
+        </div>
+    </div>
+
+    
+    <script src="cheet.js"></script>
+    <script src="tama.js"></script>
+</body>
+
+</html>
